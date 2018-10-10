@@ -1,0 +1,39 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="zsmk_data1.controller.v_header" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}" busyIndicatorDelay="0">
+				<content>
+					<Table noDataText="no data" id="__table0" items="{/HeaderSet}" busyIndicatorDelay="0">
+						<items>
+							<ColumnListItem id="__item0" type="DetailAndActive" detailPress="onDetailPress" press="onPress" selected="true" busyIndicatorDelay="0"
+								detailTap="onChangePress">
+								<cells>
+									<Text id="__text0" text="{DocNo}"/>
+									<Text id="__text1" text="{CreatedBy}-{DocType}"/>
+									<Text id="__text2"
+										text="{path : 'DocDate', type:'sap.ui.model.type.Date', formatOptions: {pattern: 'MM/dd/yyyy', strictParsing: true , UTC: true}}"/></cells>
+							</ColumnListItem>
+						</items>
+						<columns>
+							<Column id="__column0">
+								<header>
+									<Label text="Document #" id="__label0"/>
+								</header>
+							</Column>
+							<Column id="__column1">
+								<header>
+									<Label text="Created By" id="__label1"/>
+								</header>
+							</Column>
+							<Column id="__column2">
+								<header>
+									<Label text="Document Date" id="__label2"/>
+								</header>
+							</Column>
+						</columns>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

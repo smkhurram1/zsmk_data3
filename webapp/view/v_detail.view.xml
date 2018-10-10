@@ -1,0 +1,28 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="zsmk_data1.controller.v_detail">
+	<App>
+		<pages>
+			<sap.m.semantic:DetailPage xmlns:sap.m.semantic="sap.m.semantic" title="Semantic Page" id="__page2" showNavButton="true" navButtonPress="onNavBack">
+			    <sap.m.semantic:content>
+			        <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" layout="ResponsiveGridLayout" id="__form0" columnsL="1" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" editable="true" minWidth="1024">
+			            <sap.ui.layout.form:content>
+			                <Label xmlns="sap.m" text="Document Number" id="__label0"/>
+			                <Input xmlns="sap.m" width="100%" id="__input0" value="{DocNo}" editable="{itemDetailView>/editable}"/>
+			                <Label xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Document Date" id="__label0_copy"/>
+			                <Input xmlns="sap.m" width="100%" id="__input1" value="{path : 'DocDate', type:'sap.ui.model.type.Date', formatOptions: {pattern: 'MM/dd/yyyy', strictParsing: true , UTC: true}}" editable="{itemDetailView>/editable}"/>
+			                <Label xmlns="sap.m" text="Document Date" id="__label1"/>
+			                <DatePicker xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" width="100%" id="__picker0" value="{path : 'DocDate', type:'sap.ui.model.type.Date', formatOptions: {pattern: 'MM/dd/yyyy', strictParsing: true , UTC: true}}" editable="{itemDetailView>/editable}"/>
+			                <Label xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Document Date" id="__label0_copy2"/>
+			                </sap.ui.layout.form:content>
+			            
+			        </sap.ui.layout.form:SimpleForm>
+			    </sap.m.semantic:content>
+			<sap.m.semantic:positiveAction>
+			    <sap.m.semantic:PositiveAction text="Save" id="__action0"/>
+			</sap.m.semantic:positiveAction>
+			<sap.m.semantic:negativeAction>
+			    <sap.m.semantic:NegativeAction text="Cancel" id="__action1" press="onNavBack"/>
+			</sap.m.semantic:negativeAction>
+			</sap.m.semantic:DetailPage>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,7 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="zsmk_data1.controller.v_notfound"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<MessagePage
+	title="Title:Not found"
+	text="text for key does not found"
+	description="description of not found"/>
+</mvc:View>
